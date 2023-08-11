@@ -1,0 +1,29 @@
+package com.example.leetcode.calculateSoldCredit;
+
+public enum CreditPaymentSource {
+    ABS_BANK_ACCOUNT,
+    BANK_ACCOUNT,
+    CREDIT_CARD,
+    BONUS,
+    KKB_CARD,
+    CNP_CARD,
+    QIWI,
+    KASSA24,
+    KAZPOST,
+    FREEDOM_FINANCE,
+    YURTA,
+    HOMEBANK,
+    BCC,
+    SELF_REFINANCE,
+    FORGIVENESS,
+    PROBLEM_LOANS_FUND,
+    REFERRAL_PROGRAM_BONUS_PAYMENT,
+    RBK,
+    RBK_CASHBACK_BONUS_PAYMENT,
+    RBK_PROMO_BONUS_PAYMENT,
+    PAYDALA,
+    RBK_MANUAL_BONUS_PAYMENT,
+    RBK_AUTO_BONUS_PAYMENT,
+    COLLECTOR;
+}
+
