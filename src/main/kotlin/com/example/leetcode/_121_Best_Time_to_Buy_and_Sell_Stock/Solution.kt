@@ -10,5 +10,21 @@ class Solution {
     val max = prices.copyOfRange(minIndex, size).max()
     return maxOf(max - prices[minIndex], maxProfit(prices.copyOfRange(0, minIndex)))
   }
+
+  /**
+   * The DP algorithm
+   * O(n)
+   * O(1)
+   */
+  fun maxProfit2(prices: IntArray): Int {
+    var profit = 0
+    var stock = prices[0]
+    for (i in 1 until prices.size) {
+      val hypotheticalProfit = prices[i] - stock
+      if (profit < hypotheticalProfit) profit = hypotheticalProfit
+      if (stock > prices[i]) stock = prices[i]
+    }
+    return profit
+  }
 }
 

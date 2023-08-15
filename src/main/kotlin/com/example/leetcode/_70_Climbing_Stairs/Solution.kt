@@ -17,4 +17,23 @@ class Solution {
     val phi = (1 + sqrt(5.0)) / 2
     return (round(phi.pow(n + 1)) / sqrt(5.0)).roundToInt()
   }
+
+  /**
+   * The DP algorithm of the Fibonacci numbers as it is supposed to be
+   * O(n)
+   * O(1)
+   */
+  fun climbStairs2(n: Int): Int {
+    if (n == 1) return 1
+    if (n == 2) return 2
+    var penultimate = 1
+    var ultimate = 2
+    var result = 0
+    for (i in 3..n) {
+      result = ultimate + penultimate
+      penultimate = ultimate
+      ultimate = result
+    }
+    return result
+  }
 }
