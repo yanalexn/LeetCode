@@ -3,7 +3,7 @@ package com.example.leetcode._Contains_Duplicate
 class Solution {
 
   /**
-   * slightly improved after reading other solution
+   * slightly improved after reading other solutions
    *
    * O(n)
    *
