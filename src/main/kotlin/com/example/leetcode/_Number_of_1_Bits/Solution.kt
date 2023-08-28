@@ -2,6 +2,12 @@ package com.example.leetcode._Number_of_1_Bits
 
 class Solution {
   // you need treat n as an unsigned value
+
+  /**
+   * O(log n)
+   *
+   * O(1)
+   */
   fun hammingWeight(n: Int): Int {
     var copy = n
     var counter = 0

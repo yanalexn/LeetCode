@@ -17,6 +17,8 @@ class SolutionTest {
         Arguments.of(10, 12, 22),
         Arguments.of(-1, 2, 1),
         Arguments.of(-1, -2, -3),
+        Arguments.of(-1, 1, 0),
+        Arguments.of(-1, -1, -2),
       )
   }
 
