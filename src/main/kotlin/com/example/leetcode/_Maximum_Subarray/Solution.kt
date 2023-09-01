@@ -1,6 +1,5 @@
 package com.example.leetcode._Maximum_Subarray
 
-
 class Solution {
 
   /**
@@ -39,5 +38,22 @@ class Solution {
         result = subprobs[i]
     }
     return result
+  }
+
+  /**
+   * Task revisited
+   *
+   * O(n)
+   *
+   * O(1)
+   */
+  fun maxSubArray3(nums: IntArray): Int {
+    var max = nums[0]
+    var chain = nums[0]
+    for (i in 1 until nums.size) {
+      chain = maxOf(chain + nums[i], nums[i])
+      max = maxOf(max, chain)
+    }
+    return max
   }
 }
