@@ -1,8 +1,6 @@
 package com.example.leetcode._Subtree_of_Another_Tree
 
-import java.util.*
-
-/**
+/*
  * Example:
  * var ti = TreeNode(5)
  * var v = ti.`val`

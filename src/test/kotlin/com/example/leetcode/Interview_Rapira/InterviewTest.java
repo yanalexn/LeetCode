@@ -1,4 +1,4 @@
-package com.example.leetcode.interview;
+package com.example.leetcode.Interview_Rapira;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

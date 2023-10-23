@@ -1,7 +1,6 @@
 package com.example.leetcode._Last_Stone_Weight
 
 import java.util.*
-import kotlin.Comparator
 
 class Solution {
 

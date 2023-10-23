@@ -10,7 +10,7 @@ class MinStack {
   private var tail: Node? = null
   private var counter = 0
 
-  /*as I noticed from the solution from NeetCode, you can remove counter and
+  /*as I've noticed from the solution from NeetCode, you can remove counter and
   use tail == null as a checker
   */
   private data class Node(

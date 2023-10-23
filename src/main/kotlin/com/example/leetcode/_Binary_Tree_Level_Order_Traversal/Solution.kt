@@ -3,7 +3,7 @@ package com.example.leetcode._Binary_Tree_Level_Order_Traversal
 import java.util.*
 import kotlin.collections.ArrayList
 
-/**
+/*
  * Example:
  * var ti = TreeNode(5)
  * var v = ti.`val`
@@ -55,7 +55,7 @@ class Solution {
     if (root == null) return output
     var queue = LinkedList<TreeNode>()
     queue.add(root)
-    while (!queue.isEmpty()) {
+    while (queue.isNotEmpty()) {
       var size = queue.size
       var curLevel : MutableList<Int> = ArrayList()
       for (i in 0 until size) {

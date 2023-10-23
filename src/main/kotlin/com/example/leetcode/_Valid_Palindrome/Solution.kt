@@ -12,9 +12,9 @@ class Solution {
     var i = 0
     var j = s.length - 1
     while (i < j) {
-      if (!isAlphaNumricChar(s[i])) i++
-      else if (!isAlphaNumricChar(s[j])) j--
-      else if (isAlphaNumricChar(s[i]) && isAlphaNumricChar(s[j])) {
+      if (!isAlphaNumericChar(s[i])) i++
+      else if (!isAlphaNumericChar(s[j])) j--
+      else if (isAlphaNumericChar(s[i]) && isAlphaNumericChar(s[j])) {
         if (isUpperCase(s[i]) && isUpperCase(s[j]) && s[i] != s[j]
           || (isUpperCase(s[i]) && !isUpperCase(s[j]) && s[i] + 32 != s[j])
           || (!isUpperCase(s[i]) && isUpperCase(s[j]) && s[i] != s[j] + 32)
@@ -26,7 +26,7 @@ class Solution {
     return true
   }
 
-  private fun isAlphaNumricChar(char: Char) =
+  private fun isAlphaNumericChar(char: Char) =
     char in '0'..'9'
       || isUpperCase(char)
       || isLowerCase(char)

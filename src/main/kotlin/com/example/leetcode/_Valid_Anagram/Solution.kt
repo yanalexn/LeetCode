@@ -12,7 +12,7 @@ class Solution {
 
     val sCharCounter = IntArray(26)
     val tCharCounter = IntArray(26)
-    for (i in 0 until s.length) {
+    for (i in s.indices) {
       sCharCounter[s[i] - 'a']++
       tCharCounter[t[i] - 'a']++
     }
